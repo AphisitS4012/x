@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+</head>
+<link rel="stylesheet" href="twt.css">
+<!-- <style>
+    body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+
+        background-color: black;
+    }
+
+    .side-bar {
+        display: flex;
+        flex: 1;
+
+        justify-content: flex-end;
+    }
+
+    .content {
+        flex: 1;
+        background-color: green;
+        padding: 0 16px;
+    }
+
+    .search-box {
+        flex: 1;
+        background-color: yellow;
+    }
+
+    .side-bar-container {
+        width: 250px;
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        height: 58px;
+        width: 100%;
+
+        padding: 4px 0;
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu>.manu-group>span {
+        color: white;
+        margin-left: 20px;
+    }
+
+    .manu-group {
+        padding: 12px;
+        display: flex;
+        border-radius: 24px;
+        align-items: center;
+
+    }
+
+    .manu-group:hover {
+        background-color: #16181c;
+        cursor: pointer;
+    }
+
+    .tweet {
+        height: 52px;
+        width: 225px;
+
+        margin: 16px 0;
+
+        border-radius: 52px;
+        background-color: #219bf0;
+        color: white;
+        border: none;
+    }
+
+    .profile-section {
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-end;
+        display: flex;
+
+    }
+
+    .profile {
+        height: 64px;
+        width: 100%;
+        margin: 12px 0;
+        border-radius: 64px;
+        background-color: #16181c;
+    }
+</style> -->
+
+<body>
+    <div class="side-bar">
+        <div class="side-bar-container">
+            <div class="nav-menu">
+                <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/twitter.svg"
+                    alt="">
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/home.svg"
+                        alt=""><span>Homes</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/explore.svg"
+                        alt=""> <span>Explore</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/notifications.svg"
+                        alt=""><span>Notifications</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/messages.svg"
+                        alt=""><span>Messages</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/bookmarks.svg"
+                        alt=""><span>Bookmarks</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/lists.svg"
+                        alt=""><span>Lists</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/profile.svg"
+                        alt=""><span>Profile</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="manu-group">
+                    <img src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/sidebar/more.svg"
+                        alt=""><span>More</span>
+                </div>
+            </div>
+            <button class="tweet-btn">Tweet</button>
+            <div class="profile-section">
+                <div class="profile"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="title">Home</div>
+        <div class="tweet-section">
+            <div class="tweet-profile">
+                <div class="tweet-image"></div>
+            </div>
+            <div class="write-tweet">
+                <input type="text" placeholder="What's happening?">
+
+                <div class="icon-section">
+                    <div class="icon"><img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/writeTweet/media.svg">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/writeTweet/gif.svg">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/writeTweet/pole.svg">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/writeTweet/emoji.svg">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/writeTweet/schedule.svg">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/writeTweet/location.svg">
+                        <!-- <button type="submit">Tweet</button> -->
+                    </div>
+                    <button type="submit">Tweet</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="feed">
+            <div class="tweet">
+                <div class="tweet-profile">
+                    <div class="tweet-image"></div>
+                </div>
+                <div class="tweet-content">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <div class="name">Nice Kicks <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/verify.svg">
+                        <span>@nicekicks 7h</span>
+                    </div>
+                    <div class="text-content">Who elsw? <span>#SNKRS</span></div>
+                    <div class="tweet-photo"></div>
+                    <div class="action-group">
+                        <div class="action"><img
+                                src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/comment.svg">
+                            <span class="runing-number">99</span>
+                        </div>
+                        <div class="action"><img
+                                src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/retweet.svg">
+                            <span class="runing-number">99</span>
+                        </div>
+                        <div class="action"><img
+                                src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/like.svg">
+                            <span class="runing-number">99</span>
+                        </div>
+                        <div>
+                            <img
+                                src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/share.svg">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-box">
+        <div class="search-box-container">
+            <input type="text" placeholder="Search Twitter">
+
+            <div class="trend-container">
+                <h2>Trends for you</h2>
+
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="trend">
+                    <button class="more-button">
+                        <img
+                            src="https://raw.githubusercontent.com/chanatip-ws/html-css-twitter-home/main/icon/tweet/more.svg">
+                    </button>
+                    <span>Trending in Thailand</span>
+                    <span>#Csssometing</span>
+                    <span>100K Tweet</span>
+                </div>
+                <div class="show-more">
+                    <span>Show more</span>
+                </div>
+            </div>
+
+            <div class="account-container">
+                <h2>Who to follow</h2>
+
+                <div class="account">
+                    <div class="account-section">
+                        <div class="tweet-image"></div>
+                        <div class="account-name">
+                            <span>CssWorld</span>
+                            <span>100K Tweet</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="account">
+                    <div class="account-section">
+                        <div class="tweet-image"></div>
+                        <div class="account-name">
+                            <span>CssWorld</span>
+                            <span>100K Tweet</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="show-more">
+                    <span>Show more</span>
+                </div>
+            </div>
+
+            <div class="footter">
+                <a>Terms of service</a>
+                <a>Privacy Plicy</a>
+                <a>Cookie Plicy</a>
+                <a>Accessibility</a>
+                <a>Ads info</a>
+                <a>More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
